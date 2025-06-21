@@ -1,4 +1,5 @@
 import "./App.css"
+import { useState } from "react";
 import Welcome from "./Welcome.jsx"
 import { btnClick } from "./BtnClick.js";
 import Profile from "./components/Profile.jsx";
@@ -18,6 +19,15 @@ function App() {
     const myName = "Artika"
     const fullName = "A Faisal"
     let fruits = ["Apple", "Mango", "Banana", "Kiwi", "Watemelon", "Orange", "Lemon"]
+
+    let count = 0
+
+    const increaseCount = () => {
+      count++
+      console.log(count)
+    }
+
+    let [stateCount, setStateCount] = useState(0) // this is how we declare variable
 
     const profiles = [
     {
@@ -61,6 +71,10 @@ function App() {
           <Profile key={i} name={profile.name} title={profile.title} imageUrl={profile.imageUrl}/> 
 
         ))}
+
+        {/* <button onClick={increaseCount}>count: {count}</button> */}
+        <button onClick={() => setStateCount(stateCount + 1)}>count: {stateCount}</button> 
+      
         
       </div>
     
