@@ -2,7 +2,7 @@
 // Create a form that asks for:
 // 1. Username
 // 2. Email
-
+// 3. Use state to control both inputs and show a live summary below the form
 
 import { useState } from "react";
 

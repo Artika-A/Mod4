@@ -1,14 +1,16 @@
+import Assignment from "./components/Assignment"
 import MiniActivity from "./components/MiniActivity"
 
 function App() {
   
   return (
     <div>
-      <h1><u>Mini Activity</u></h1>
+      <h1><u>Mini Activity</u></h1> 
       <MiniActivity/>
-      
-    </div>
-   
+      <hr />  
+      <h1><u>Assignment</u></h1>
+      <Assignment/>    
+    </div>   
   )
 }
 
