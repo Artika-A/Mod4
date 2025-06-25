@@ -17,3 +17,4 @@ export default Welcome
 
 // we can use {} at any point of our HTML to access javascript
 // props -pass something else from outside into this thing then it will render with anything we pass to it
+// welcome is component
